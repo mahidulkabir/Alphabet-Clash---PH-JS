@@ -13,7 +13,7 @@
   >
     <!-- home page section  -->
     <section
-      class="home-page text-white flex flex-col min-h-screen items-center justify-center hidden"
+      class="home-page text-white flex flex-col min-h-screen items-center justify-center "
     >
       <div class="flex flex-col items-center justify-center gap-8">
         <h1 class="font-inter font-black text-8xl">ALPHA CLASH PRO</h1>
@@ -22,7 +22,7 @@
       </div>
     </section>
     <!-- game page section  -->
-    <section class="game-page">
+    <section class="game-page hidden">
       <div class=" flex flex-col justify-center items-center gap-8 pt-12">
         <!-- artboard  -->
         <div
@@ -74,12 +74,18 @@
         </div>
         <!-- score  -->
          <div class="flex justify-between w-1/2">
-             <button class="btn bg-[#894189] text-white border-none rounded-xl"> Life<img src="./images/heart.svg" alt=""></button>
-            <button class="btn bg-[#360490] text-white border-none rounded-xl">Score<img src="./images/heart.svg" alt=""></button>
+             <button class="btn bg-[#894189] text-white border-none rounded-xl"> Life<img src="./images/heart.svg" alt=""> <span>1</span></button>
+            <button class="btn bg-[#360490] text-white border-none rounded-xl">Score<img src="./images/dolar.svg" alt=""> <span>1</span></button>
          </div>
             
       </div>
     </section>
-    <section class="score-page"></section>
+    <section class="score-page min-h-screen flex flex-col items-center justify-center hidden">
+        <div class="text-white   bg-[#FFFFFF33] text-center space-y-4 p-8 rounded-lg">
+            <h1 class="text-8xl"><span class="font-extrabold text-8xl">Score: </span> 14</h1>
+            <button class="btn font-semibold">Play Now</button>
+            <p class="text-white">Practice will make you Pro</p>
+        </div>
+    </section>
   </body>
 </html>
