@@ -23,12 +23,18 @@
     </section>
     <!-- game page section  -->
     <section class="game-page">
-      <div class="">
+      <div class=" flex flex-col justify-center items-center gap-8 pt-12">
         <!-- artboard  -->
         <div
-          class="artboard artboard-horizontal phone-6 text-white border-[20px] rounded-lg border-[#010313B3] bg-[#FFFFFFB3]"
-        >
-          1024×320
+          class="artboard artboard-horizontal phone-6 text-white border-[20px] rounded-lg border-[#010313B3] bg-[#FFFFFFB3] " >
+       <div class="flex justify-center">
+         <p class="bg-[#010313B3] px-6 pb-4 rounded-b-xl text-white font-semibold">
+            Don't watch keyboard  while playing...
+        </p>
+       </div>
+        <div class="flex justify-center mt-8 ">
+            <p class="text-black text-8xl font-bold"> Y </p>
+        </div>
         </div>
         <!-- keyboard -->
         <div class="keyboard">
@@ -67,35 +73,11 @@
           </div>
         </div>
         <!-- score  -->
-         <button class="btn">
-  Button
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    class="h-6 w-6"
-    fill="none"
-    viewBox="0 0 24 24"
-    stroke="currentColor">
-    <path
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      stroke-width="2"
-      d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-  </svg>
-</button><button class="btn">
-  Button
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    class="h-6 w-6"
-    fill="none"
-    viewBox="0 0 24 24"
-    stroke="currentColor">
-    <path
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      stroke-width="2"
-      d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-  </svg>
-</button>
+         <div class="flex justify-between w-1/2">
+             <button class="btn bg-[#894189] text-white border-none rounded-xl"> Life<img src="./images/heart.svg" alt=""></button>
+            <button class="btn bg-[#360490] text-white border-none rounded-xl">Score<img src="./images/heart.svg" alt=""></button>
+         </div>
+            
       </div>
     </section>
     <section class="score-page"></section>
