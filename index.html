@@ -12,17 +12,16 @@
     class="bg-[#010313] min-h-screen bg-[url(./images/background.png)] bg-no-repeat bg-center font-poppins"
   >
     <!-- home page section  -->
-    <section
-      class="home-page text-white flex flex-col min-h-screen items-center justify-center "
+    <section id="home-page" class="home-page text-white flex flex-col min-h-screen items-center justify-center "
     >
       <div class="flex flex-col items-center justify-center gap-8">
         <h1 class="font-inter font-black text-8xl">ALPHA CLASH PRO</h1>
         <p>Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
-        <button class="btn font-bold">Play Now</button>
+        <button onclick="play()" class="btn font-bold">Play Now</button>
       </div>
     </section>
     <!-- game page section  -->
-    <section class="game-page hidden">
+    <section id="game-page" class="game-page hidden">
       <div class=" flex flex-col justify-center items-center gap-8 pt-12">
         <!-- artboard  -->
         <div
@@ -80,6 +79,7 @@
             
       </div>
     </section>
+    <!-- score section  -->
     <section class="score-page min-h-screen flex flex-col items-center justify-center hidden">
         <div class="text-white   bg-[#FFFFFF33] text-center space-y-4 p-8 rounded-lg">
             <h1 class="text-8xl"><span class="font-extrabold text-8xl">Score: </span> 14</h1>
@@ -87,5 +87,7 @@
             <p class="text-white">Practice will make you Pro</p>
         </div>
     </section>
+    <script src="./scripts/utility.js"></script>
+    <script src="./scripts/alpha-clash.js"></script>
   </body>
 </html>
