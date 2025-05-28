@@ -15,8 +15,10 @@ function keyPressedFuntion(event){
     // conditional statement
     if (playerPressed === expectedKey){
         continueGame();
+        unSetBackgroundColor(expectedKey);
+        increaseScore();
     }else{
-        console.log('you are wrong');
+        decreaseLife();
     }
     
 }   
