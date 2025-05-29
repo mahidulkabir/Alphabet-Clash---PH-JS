@@ -16,9 +16,11 @@ function keyPressedFuntion(event){
     if (playerPressed === expectedKey){
         continueGame();
         unSetBackgroundColor(expectedKey);
-        increaseScore();
+        increaseScore('score');
     }else{
-        decreaseLife();
+        decreaseLife('life');
+        gameOver();
+        
     }
     
 }   
@@ -30,4 +32,11 @@ function play(){
     hideElementById('home-page');
     showElementById('game-page');
     continueGame();
+}
+
+function playAgain(){
+    hideElementById('home-page');
+    showElementById('game-page');
+    continueGame();
+    
 }

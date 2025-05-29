@@ -20,18 +20,38 @@ function unSetBackgroundColor (elementID){
 }
 
 // score increament 
-function increaseScore() {
-  const scoreElement = document.getElementById('score');
+function increaseScore(elementID) {
+  const scoreElement = document.getElementById(elementID);
   let currentScore = parseInt(scoreElement.innerText) || 0;
   currentScore++;
   scoreElement.innerText = currentScore;
 }
 // life decrement 
-function decreaseLife() {
-  const scoreElement = document.getElementById('life');
+function decreaseLife(elementID) {
+  const scoreElement = document.getElementById(elementID);
   let currentLife = parseInt(scoreElement.innerText) || 0;
   currentLife--;
   scoreElement.innerText = currentLife;
+}
+// manipulating last score 
+function finalScore(){
+  const scoreElement = document.getElementById('score');
+  let currentScore = parseInt(scoreElement.innerText);
+  
+  let finalScoreID = document.getElementById('final-score');
+  finalScoreID.innerText = currentScore;
+  // console.log(finalScoreText);
+  // console.log(currentScore);
+}
+// game over 
+function gameOver(){
+  const scoreElement = document.getElementById('life');
+  let currentLife = parseInt(scoreElement.innerText);
+  if(currentLife === 0){
+    showElementById('score-page');
+    hideElementById('game-page');
+    finalScore();
+  }
 }
 // getting random alphabet 
 function getRandomAlphbet(){

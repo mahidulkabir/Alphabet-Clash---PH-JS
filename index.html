@@ -73,17 +73,17 @@
         </div>
         <!-- score  -->
          <div class="flex justify-between w-1/2">
-             <button class="btn bg-[#894189] text-white border-none rounded-xl"> Life<img src="./images/heart.svg" alt=""> <span id="life">3</span></button>
-            <button class="btn bg-[#360490] text-white border-none rounded-xl">Score<img src="./images/dolar.svg" alt=""> <span id="score">1</span></button>
+             <button class="btn bg-[#894189] text-white border-none rounded-xl"> Life<img src="./images/heart.svg" alt=""> <span id="life">5</span></button>
+            <button class="btn bg-[#360490] text-white border-none rounded-xl">Score<img src="./images/dolar.svg" alt=""> <span id="score">0</span></button>
          </div>
             
       </div>
     </section>
     <!-- score section  -->
-    <section class="score-page min-h-screen flex flex-col items-center justify-center hidden">
+    <section id="score-page" class="score-page min-h-screen flex flex-col items-center justify-center hidden">
         <div class="text-white   bg-[#FFFFFF33] text-center space-y-4 p-8 rounded-lg">
-            <h1 class="text-8xl"><span class="font-extrabold text-8xl">Score: </span> 14</h1>
-            <button class="btn font-semibold">Play Now</button>
+            <h1 class="text-8xl"><span class="font-extrabold text-8xl">Score: </span> <span id="final-score">0</span></h1>
+            <button onclick="playAgain()" class="btn font-semibold">Play Now</button>
             <p class="text-white">Practice will make you Pro</p>
         </div>
     </section>
