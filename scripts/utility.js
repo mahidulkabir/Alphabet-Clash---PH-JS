@@ -18,7 +18,11 @@ function unSetBackgroundColor (elementID){
     const element = document.getElementById(elementID);
     element.classList.remove('bg-orange-400');
 }
-
+// set value to score and life 
+function setValueToID (elementID, value){
+  const Element = document.getElementById(elementID);
+  Element.innerText= value;
+}
 // score increament 
 function increaseScore(elementID) {
   const scoreElement = document.getElementById(elementID);

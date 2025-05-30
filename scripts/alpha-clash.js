@@ -7,7 +7,6 @@ function continueGame(){
 function keyPressedFuntion(event){
     // player pressed 
     const playerPressed = event.key;
-    
     // expected key 
     const currentAlphabet = document.getElementById('current-alphabet');
     const expectedKey = currentAlphabet.innerText.toLowerCase();
@@ -35,8 +34,13 @@ function play(){
 }
 
 function playAgain(){
-    hideElementById('home-page');
+    hideElementById('score-page');
     showElementById('game-page');
+    setValueToID('life',5);
+    setValueToID('score',0);
+    const currentAlphabet = document.getElementById('current-alphabet');
+    const expectedKey = currentAlphabet.innerText.toLowerCase();
+    unSetBackgroundColor (expectedKey);
     continueGame();
     
 }
